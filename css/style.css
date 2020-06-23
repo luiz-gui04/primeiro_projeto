@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*classes auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{clear: both;}
+/*classes do meu site*/
+header{
+    padding: 8px 0;
+}
+.logo{
+    float: left;
+}
+.logo h2{
+    font-weight: normal;
+    font-size:23px;
+}
+nav.menu-desktop{
+    float:right
+}
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+.selected{font-weight: normal;}
+nav.menu-desktop li{
+    display: inline-block;
+    padding:0 10px
+}
+nav.menu-desktop a{
+    color: black;
+    text-decoration: none;
+}
+nav.menu-desktop a:hover{text-decoration: underline;}
+
+/*sessão main*/
+section.main-bg{
+    position: relative;
+    width: 100%;
+    padding: 140px 0 200px 0;
+    background-image: url('../images/floresta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+section.main-bg >.container{
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    left:0;
+    top: 0;
+}
+section.main-bg h2{
+    color: #52aaa7;
+    font-size: 40px;
+    font-weight: normal;
+}
+section.main-bg p{
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: left;
+}
+section.diferenciais{
+    padding: 30px 0;
+    text-align: center;
+}
+.line-text{
+    position: relative;
+    display: inline-block;
+    color:#52aaa7;
+}
+.line-text div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 3px;
+    background:#52aaa7;
+}
+.line-text h2{
+    font-weight: normal;
+    font-size: 27px;
+}
+.icones-diferenciais{
+    margin-top: 35px;
+}
+.box-icone-single{
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.box-icone-single h2{
+    color: #8a6b62;
+    font-size: 40px;
+}
+.box-icone-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+}
+@media screen and(max-width:768px){
+    .box-icone-single{
+        width: 100%;
+    }
+}
